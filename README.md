@@ -2,14 +2,13 @@
 
 The *smart doorbell* works like this: when someone presses the bell button, the *ESP32-CAM* board takes a photo, sends a notification to your smartphone, and uploads the photo to *Firebase Storage*. You can also receive photos when you click on a special button in *my app*. All photos will be stored in the *cloud*, so you can view them from different devices.
 
-[<img alt="Video-About-My-Project-On-YouTube" width="1280px" heigth="720px" src="https://img.youtube.com/vi/1FJSTyXEtSo/0.jpg"/>](https://www.youtube.com/watch?v=1FJSTyXEtSo)
+[![Video about my project on YouTube](https://img.youtube.com/vi/1FJSTyXEtSo/0.jpg)](https://www.youtube.com/watch?v=1FJSTyXEtSo)
 
 ## Tools and frameworks that I used
 
 [<img align="left" alt="ArduinoIDE" width="32px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/arduino/arduino.png"/>](https://www.arduino.cc/en/software)
 [<img align="left" alt="AndroidStudio" width="32px" src="https://img.icons8.com/color/344/android-studio--v3.png"/>](https://developer.android.com/studio)
 [<img align="left" alt="Firebase" width="32px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"/>](https://firebase.google.com)
-</br>
 </br>
 ## Arduino IDE libraries
 
