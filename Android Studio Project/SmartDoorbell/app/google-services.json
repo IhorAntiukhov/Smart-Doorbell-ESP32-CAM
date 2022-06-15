@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "561824868251",
+    "firebase_url": "https://smartwifidoorbell-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "smartwifidoorbell",
+    "storage_bucket": "smartwifidoorbell.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561824868251:android:84bd93f5a61c962e36a33e",
+        "android_client_info": {
+          "package_name": "com.arduinoworld.smartdoorbell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561824868251-5n2cbeekr6fe6j0jp3oqnmv51uhuet71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKa07yWvRKFuSIqrXioRnhKVUC99zUJFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561824868251-5n2cbeekr6fe6j0jp3oqnmv51uhuet71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

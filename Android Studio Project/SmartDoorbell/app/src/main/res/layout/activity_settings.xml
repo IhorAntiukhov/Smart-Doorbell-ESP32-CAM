@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@drawable/scrollbar_style"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="13dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toStartOf="@+id/radioGroupVibrationTypes"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.5"
+                            android:autoSizeMaxTextSize="100sp"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="Обычная вибрация"
+                            android:textColor="@color/primary_color"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText,RtlSymmetry"
+                            tools:targetApi="o" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:autoSizeMaxTextSize="100sp"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="Тактильная отдача"
+                            android:textColor="@color/primary_color"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText,RtlSymmetry"
+                            tools:targetApi="o" />
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupVibrationTypes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        tools:ignore="UselessParent">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonNormalVibration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:buttonTint="@color/primary_color" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonHapticFeedback"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            app:buttonTint="@color/primary_color" />
+                    </RadioGroup>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:background="@color/secondary_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="13dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toStartOf="@+id/radioGroupVibrationTypes"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.5"
+                            android:autoSizeMaxTextSize="100sp"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="Удалять все фото"
+                            android:textColor="@color/primary_color"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText,RtlSymmetry"
+                            tools:targetApi="o" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:autoSizeMaxTextSize="100sp"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeStepGranularity="1sp"
+                            android:autoSizeTextType="uniform"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="Удалять первое"
+                            android:textColor="@color/primary_color"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText,RtlSymmetry"
+                            tools:targetApi="o" />
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupDeleteImagesMode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        tools:ignore="UselessParent">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonDeleteAllImages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:buttonTint="@color/primary_color" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonDeleteOldestImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            app:buttonTint="@color/primary_color" />
+                    </RadioGroup>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:background="@color/secondary_color" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutMaxImages"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:textColor="@color/primary_color"
+                android:textColorHint="@color/primary_color"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeColor="@color/secondary_color"
+                app:boxStrokeWidth="4dp"
+                app:boxStrokeWidthFocused="4dp"
+                app:helperText="Максимальное значение: 10"
+                app:helperTextEnabled="true"
+                app:helperTextTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:helperTextTextColor="@color/secondary_color"
+                app:placeholderTextColor="@color/primary_color"
+                app:startIconTint="@color/primary_color"
+                tools:ignore="HardcodedText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputMaxImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="1234567890"
+                    android:drawableStart="@drawable/ic_image"
+                    android:drawablePadding="5dp"
+                    android:hint="Макс кол-во фотографий"
+                    android:includeFontPadding="false"
+                    android:inputType="numberDecimal"
+                    android:maxLength="2"
+                    android:text="5"
+                    android:textColor="@color/primary_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:targetApi="o" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutImagesFolder"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:textColor="@color/primary_color"
+                android:textColorHint="@color/primary_color"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeColor="@color/secondary_color"
+                app:boxStrokeWidth="4dp"
+                app:boxStrokeWidthFocused="4dp"
+                app:placeholderTextColor="@color/primary_color"
+                app:startIconTint="@color/primary_color"
+                tools:ignore="HardcodedText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputImagesDirectory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_folder"
+                    android:drawablePadding="5dp"
+                    android:hint="Папка для фото"
+                    android:includeFontPadding="false"
+                    android:inputType="none"
+                    android:singleLine="true"
+                    android:text="Pictures/Умный Звонок"
+                    android:textColor="@color/primary_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:targetApi="o" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/buttonSelectDirectory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/image_button_background_style"
+                    android:padding="15dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_choose_folder"
+                    tools:ignore="ContentDescription,VectorDrawableCompat" />
+
+                <ImageButton
+                    android:id="@+id/buttonDeleteImages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/image_button_background_style"
+                    android:padding="15dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_delete_photos"
+                    tools:ignore="ContentDescription,VectorDrawableCompat" />
+
+                <ImageButton
+                    android:id="@+id/buttonDefaultSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/image_button_background_style"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_reset_settings"
+                    tools:ignore="ContentDescription,VectorDrawableCompat" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

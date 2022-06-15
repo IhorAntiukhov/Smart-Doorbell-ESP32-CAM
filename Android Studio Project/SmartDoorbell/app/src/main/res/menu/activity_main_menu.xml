@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/buttonBack"
+        android:icon="@drawable/ic_back_arrow"
+        android:title="Назад"
+        android:visible="false"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction,HardcodedText" />
+
+    <item
+        android:id="@+id/buttonUserProfile"
+        android:icon="@drawable/ic_user_profile"
+        android:title="Профиль"
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/buttonESP32Settings"
+        android:icon="@drawable/ic_esp32_settings"
+        android:title="Настройка ESP32-CAM"
+        app:showAsAction="always"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/buttonSettings"
+        android:icon="@drawable/ic_settings"
+        android:title="Настройка"
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText" />
+</menu>

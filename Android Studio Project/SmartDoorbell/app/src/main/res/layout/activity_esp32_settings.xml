@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ESP32SettingsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarESP32Settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@drawable/scrollbar_style"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutWiFiSsid"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:hint="Название WiFi сети"
+                android:textColor="@color/primary_color"
+                android:textColorHint="@color/primary_color"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeColor="@color/secondary_color"
+                app:boxStrokeWidth="4dp"
+                app:boxStrokeWidthFocused="4dp"
+                app:placeholderTextColor="@color/primary_color"
+                app:startIconTint="@color/primary_color"
+                tools:ignore="HardcodedText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputWiFiSsid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_wifi"
+                    android:drawablePadding="5dp"
+                    android:includeFontPadding="false"
+                    android:inputType="none"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:targetApi="o" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutWiFiPassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:hint="Пароль WiFi сети"
+                android:textColor="@color/primary_color"
+                android:textColorHint="@color/primary_color"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeColor="@color/secondary_color"
+                app:boxStrokeWidth="4dp"
+                app:boxStrokeWidthFocused="4dp"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/primary_color"
+                app:passwordToggleTint="@color/primary_color"
+                app:placeholderTextColor="@color/primary_color"
+                tools:ignore="HardcodedText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputWiFiPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_password"
+                    android:drawablePadding="3dp"
+                    android:includeFontPadding="false"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:targetApi="o" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutResolution"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="11dp"
+                    android:layout_weight="0.5"
+                    android:hint="Разрешение"
+                    android:textColor="@color/primary_color"
+                    android:textColorHint="@color/primary_color"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="12dp"
+                    app:boxCornerRadiusBottomStart="12dp"
+                    app:boxCornerRadiusTopEnd="12dp"
+                    app:boxCornerRadiusTopStart="12dp"
+                    app:boxStrokeColor="@color/secondary_color"
+                    app:boxStrokeWidth="4dp"
+                    app:boxStrokeWidthFocused="4dp"
+                    app:endIconTint="@color/secondary_color"
+                    tools:ignore="HardcodedText">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/inputResolution"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:singleLine="true"
+                        android:text="SVGA"
+                        android:textColor="@color/primary_color"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,LabelFor"
+                        tools:targetApi="o" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutWhiteBalance"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:hint="Баланс Белого"
+                    android:textColor="@color/primary_color"
+                    android:textColorHint="@color/primary_color"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="12dp"
+                    app:boxCornerRadiusBottomStart="12dp"
+                    app:boxCornerRadiusTopEnd="12dp"
+                    app:boxCornerRadiusTopStart="12dp"
+                    app:boxStrokeColor="@color/secondary_color"
+                    app:boxStrokeWidth="4dp"
+                    app:boxStrokeWidthFocused="4dp"
+                    app:endIconTint="@color/secondary_color"
+                    tools:ignore="HardcodedText">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/inputWhiteBalance"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Авто Баланс"
+                        android:textColor="@color/primary_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,LabelFor"
+                        tools:targetApi="o" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/buttonFlash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/image_button_background_style"
+                    android:padding="15dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_flash_off"
+                    tools:ignore="ContentDescription,MissingConstraints,VectorDrawableCompat" />
+
+                <Button
+                    android:id="@+id/buttonFlip"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_toStartOf="@+id/buttonMirror"
+                    android:layout_toEndOf="@+id/buttonFlash"
+                    android:autoSizeMaxTextSize="100sp"
+                    android:autoSizeMinTextSize="2sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:background="@drawable/button_background_style"
+                    android:maxLines="1"
+                    android:text="Перевернуть"
+                    android:textStyle="bold"
+                    app:backgroundTint="#FFFFFF"
+                    app:backgroundTintMode="multiply"
+                    tools:ignore="HardcodedText"
+                    tools:targetApi="o" />
+
+                <ImageButton
+                    android:id="@+id/buttonMirror"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/mirror_button_background_style"
+                    android:padding="15dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_mirror"
+                    tools:ignore="ContentDescription,MissingConstraints,VectorDrawableCompat" />
+
+            </RelativeLayout>
+
+            <Switch
+                android:id="@+id/switchStartSleep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="-13dp"
+                android:layout_marginEnd="24dp"
+                android:text="Переходить в сон"
+                android:textColor="@color/primary_color"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:thumbTint="@color/primary_color"
+                android:trackTint="@color/primary_color"
+                tools:ignore="HardcodedText"
+                tools:targetApi="o" />
+
+            <Button
+                android:id="@+id/buttonSendESP32Settings"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="16dp"
+                android:autoSizeMaxTextSize="100sp"
+                android:autoSizeMinTextSize="2sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/button_background_style"
+                android:maxLines="1"
+                android:text="Настроить параметры"
+                android:textStyle="bold"
+                app:backgroundTint="#FFFFFF"
+                app:backgroundTintMode="multiply"
+                tools:ignore="HardcodedText"
+                tools:targetApi="o" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
