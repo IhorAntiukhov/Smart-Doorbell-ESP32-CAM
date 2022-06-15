@@ -6,9 +6,9 @@ The *smart doorbell* works like this: when someone presses the bell button, the 
 
 ## Tools and frameworks that I used
 
-[<img align="left" alt="ArduinoIDE" width="40px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/arduino/arduino.png"/>](https://www.arduino.cc/en/software)
-[<img align="left" alt="AndroidStudio" width="46px" src="https://cdn.worldvectorlogo.com/logos/android-studio-1.svg"/>](https://developer.android.com/studio)
-[<img align="left" alt="Firebase" width="40px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"/>](https://firebase.google.com)
+[<img align="left" alt="ArduinoIDE" width="32px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/arduino/arduino.png"/>](https://www.arduino.cc/en/software)
+[<img align="left" alt="AndroidStudio" width="32px" src="https://img.icons8.com/color/344/android-studio--v3.png"/>](https://developer.android.com/studio)
+[<img align="left" alt="Firebase" width="32px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"/>](https://firebase.google.com)
 </br>
 </br>
 ## Arduino IDE libraries
